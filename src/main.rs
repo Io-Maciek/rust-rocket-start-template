@@ -17,7 +17,7 @@ struct User{
 fn index() -> Template {
 	Template::render("index", context! {
 		title: "Title",
-		user: "User",
+		user: User{ username: "Great Username"}
 	})
 }
 
